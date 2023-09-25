@@ -47,6 +47,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition: ease-in-out 0.4s;
     color: rgb(121, 121, 121);
     background-color: rgb(87, 87, 87);
     margin: 0 5%;
@@ -80,6 +81,10 @@ body {
 .section:hover h1{
     color: white;
 }
+
+.section:hover {
+    box-shadow: 5px 0px 7px rgb(19, 19, 19);
+}
 .img_gradient {
     height: 500%;
     width: 500%;
@@ -99,13 +104,15 @@ body {
     height: 10%;
     width: 100%;
     background-color: rgb(36, 36, 36);
-    color: rgb(204, 204, 204);
+    color: rgb(110, 110, 110);
     display: flex;
     justify-content: right;
     align-items: center;
+    user-select: none;
 
 }
 .footer span{
+
     margin-right: 3%;
     margin-left: 0.3%;
     font-weight: 600;
