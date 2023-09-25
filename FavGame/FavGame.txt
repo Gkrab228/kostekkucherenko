@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="FavGame.css">
+</head>
+<body>
+    
+    <main class="wrapper">
+        
+
+
+        <section class="row row--static">
+            <div class="container">
+                <div class="stack" style="--stacks: 3;">
+                  <span style="--index: 0;">watch_dogs 2</span>
+                  <span style="--index: 1;">watch_dogs 2</span>
+                  <span style="--index: 2;">watch_dogs 2</span>
+                </div>
+            </div>
+            <div class="tresc_high">
+                <div class="back"></div>
+                <div class="tekst high">
+                    
+                    <p>Watch Dogs 2 to jedna z moich ulubionych gier, która zapewnia mnóstwo przygód i emocji. Gra została wyprodukowana przez firmę Ubisoft Montreal i wydana w 2016 roku. Akcja gry rozgrywa się w San Francisco i opowiada historię grupy hakerów, znanych jako DedSec, którzy walczą z korporacjami i rządem.</p>
+                    <p>Gracz wciela się w postać Marcusa Hollowaya, który jest członkiem DedSec. Gracze będą mieli do czynienia z różnymi zadaniami i wyzwaniami, w tym włamywaniem się do systemów komputerowych, wykradaniem informacji, sabotowaniem operacji korporacyjnych, a także walkami i pościgami.</p>
+                    <p>Jednym z najbardziej interesujących elementów Watch Dogs 2 jest jego otwarty świat, który daje graczom wolność do eksplorowania i odkrywania miasta San Francisco. Gracze będą mieli dostęp do różnych pojazdów, takich jak samochody, motocykle i łodzie, co pozwala na swobodne poruszanie się po mieście.</p>
+                
+                </div>
+            </div>
+        </section>
+        
+        <section class="row row--with-parallax"></section>
+      
+        <section class=" row row--static " id="bottom_row">
+            <div class="tresc_bottom">
+                <div class="back_bottom"></div>
+                <div class="tekst down">
+                    <p>Gra oferuje także wiele interesujących funkcji multiplayer, które pozwalają na wspólną grę z innymi graczami. Można stworzyć drużynę DedSec i razem walczyć z korporacjami oraz rządem.</p>
+                    <p>Watch Dogs 2 to nie tylko świetna rozrywka, ale także gra, która zmusza do myślenia i refleksji nad współczesnymi problemami. Gra pokazuje, jak nasze życie jest uzależnione od technologii, a także jak łatwo może zostać naruszone nasze prywatne życie przez korporacje i rząd.</p>
+                    <p>W sumie, Watch Dogs 2 to świetna gra, która oferuje mnóstwo emocji, akcji i możliwości. Jest to gra dla osób, które lubią akcję i przygodę, a także dla tych, którzy interesują się tematyką hakerów i cyberbezpieczeństwa.s</p>
+                </div>
+            </div>
+            <div class="link_css">
+                <a href="FavGame.css">CSS</a>
+            </div>
+            <div class="link_html">
+                <a href="FavGame.txt">HTML</a>
+            </div>
+        </section>
+      </main>
+</body>
+</html>

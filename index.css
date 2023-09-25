@@ -1,0 +1,113 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(59, 59, 59);
+
+}
+.header{
+    position: relative;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    overflow: hidden;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.header img{
+    height: 70%;
+    margin-left: 1%;
+}
+.header h1{
+    font-size: 5vh;
+    margin-left: 1%;
+}
+.nav{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49, 49, 49);
+}
+.link{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.section{
+    position: relative;
+    height: 60%;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: rgb(121, 121, 121);
+    background-color: rgb(87, 87, 87);
+    margin: 0 5%;
+    z-index: 2;
+}
+.section h1{
+    transition: ease-in-out 0.3s;
+}
+.first:hover .img_gradient{
+    background-image: url("Usign-Gradients-Featured-Image.jpg");
+    background-size: 10000px;
+    background-position: right;
+    filter:grayscale(0);
+    animation-name: gradient;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:ease-in-out;
+}
+.second:hover .img_gradient{
+    background-image: url("86b2d6aa5f05e0c30d66674e9d4af18d.jpg");
+    background-size: 2000px;
+    background-position: right;
+    filter:grayscale(0);
+    animation-name: gradient;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:ease-in-out;
+}
+.section:hover h1{
+    color: white;
+}
+.img_gradient {
+    height: 500%;
+    width: 500%;
+    position: absolute;
+    background-color: rgb(24, 24, 24);
+    filter: grayscale(100);
+    transition: 1s ease-in-out;
+    z-index: -1;
+
+}
+@keyframes gradient {
+    0% {background-position: bottom;}
+    50% {background-position: 300px, 100px;}
+    100% {background-position: -200px, -200px;}
+}
+.footer{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    color: rgb(204, 204, 204);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+.footer span{
+    margin-right: 3%;
+    margin-left: 0.3%;
+    font-weight: 600;
+    font-size: 30px;
+}

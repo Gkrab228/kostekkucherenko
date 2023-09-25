@@ -1,0 +1,187 @@
+body {
+    
+    margin: 0;
+    font-family: Hacked;
+    height: 100vh;
+}
+@font-face {
+    font-family: Hacked;
+    src: url(https://hackedfont.com/HACKED.ttf);
+}
+.link_css {
+  margin-left: 4%;
+  margin-bottom: 1%;
+  position: absolute;
+  font-size: 100px;
+  z-index: 4;
+  transition: ease-in 0.1s;
+}
+.link_html {
+  margin-left: 15%;
+  margin-bottom: 1%;
+  position: absolute;
+  font-size: 100px;
+  z-index: 4;
+  transition: ease-in 0.3s;
+}
+a{  color: white;
+  margin-left: 4%;
+  z-index: 4;}
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    
+    perspective: 2px;
+  }
+  
+.row {
+    position: relative;
+    height: 70vh;
+    
+  }
+.row::after {
+  content: '';
+  
+  position: absolute;
+  inset: 0;
+}
+
+.row--static {
+  z-index: 1;
+  background-color: rgb(73, 73, 73);
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ly1w7nk4FrOTyC8rQrbIexYgTgULd5wjbzvOj47abmulL4Y_OrUdqW8nkPoRkcxGYSo&usqp=CAU');
+  background-position: center;
+}
+#bottom_row{
+  display: flex;
+  text-align: center;
+  align-items: end;
+  background-image: none;
+  background-image: url('9fe4479475058ee196cd9634cf54bb37.jpg');
+  background-position: 0 100px;
+  background-size: 2000px;
+}
+.row--with-parallax {
+  transform-style: preserve-3d;
+  
+
+}
+.row--with-parallax::after {
+    background: url('https://wallpapercave.com/wp/wp1841014.jpg') top no-repeat;
+    background-size: 1500px;
+    transform: translateZ(-1px) scale(2);
+    background-color: rgb(39, 39, 39);
+}
+.tresc_high {
+    margin-top: 20vh;
+    color:white;
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    width: 100%;
+    z-index: 2;
+}
+.tresc_bottom {
+  margin-bottom: 55vh;
+  color: white;   
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  width: 100%;
+  z-index: 3;
+}
+.tekst{
+    padding: 10px;
+    height: 20%;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    border-radius: 25px;
+}
+.back{
+  margin: -2% -4% 0 0;
+  position: absolute;
+  bottom: -2%;
+  height: 35%;
+  width: 50vw;
+  background-color: rgb(150, 0, 180);
+  z-index: 0;
+  transition: ease-out 0.4s;
+  border-radius: 25px;
+}
+
+.back_bottom{
+  margin-right: 4%;
+  margin-top: 3%;
+  position: absolute;
+  height: 28%;
+  width: 50vw;
+  background-color: rgb(150, 0, 180);;
+  z-index: 0;
+  transition: ease-out 0.4s;
+  border-radius: 25px;
+}
+
+.container {
+    padding-top: 100px;
+    color: var(--color);
+    font-size: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+  
+  .stack {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .stack span {
+    font-weight: 100;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-size: 200px;
+    --stack-height: calc(100% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 100ms cubic-bezier(.46,.29,0,1.24) 2 backwards calc(var(--index) * 120ms), glitch 0.6s ease infinite 2s alternate-reverse;
+  }
+  
+  .stack span:nth-child(odd) { --glitch-translate: 8px; }
+  .stack span:nth-child(even) { --glitch-translate: -8px; }
+  
+  @keyframes stack {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%);
+      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    };
+    60% {
+      opacity: 0.5;
+      transform: translateX(50%);
+    }
+    80% {
+      transform: none;
+      opacity: 1;
+      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+      transform: translate(var(--glitch-translate));
+    }
+    2% {
+      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    4%, 100% {  text-shadow: none; transform: none; }
+  }
