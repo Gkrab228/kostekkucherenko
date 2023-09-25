@@ -1,0 +1,344 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+	font-family: 'Encode Sans', sans-serif;
+    background-color: rgb(3,42,133);
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+    font-family: Font;
+    src: url(https://allyourfonts.com/download/league-of-legends-font/  );
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@900&display=swap');
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: rgb(170, 9, 52);
+    z-index: 3;
+}
+
+label{
+    display: flex;
+    width: 60vw;
+}
+
+.top_menu{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.top_menu a{
+    margin-left: 50px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.top_menu img{
+
+    height: 60px;
+    filter: invert(1);
+}
+
+.dyscyplina{
+    height: 1080px;
+    width: 98vw;
+    position: relative;
+    
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.background{
+
+    height: 1080px;
+    width: 100vw;
+    position: absolute;
+    background-image: url("https://media.gq-magazine.co.uk/photos/5d13a4d5003d756ecdae71db/master/pass/lionel-messi-gq-14feb18_getty_b.jpg");
+    filter: blur(3px);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+h1{
+    color: white;
+    font-size: 190px;
+    margin-bottom: 30px;
+}
+
+
+h2{
+    font-size: 50px;
+}
+
+.p_top{
+    font-size: larger;
+    width: 1000px;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(3,42,133, 0.7);
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+.film {
+    height: auto;
+    width: 99vw;
+    position: relative;
+    background-color: rgb(9, 43, 121);;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img_cs{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    filter: blur(10px);
+}
+
+.reprezentant_m{
+    height: auto;
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0;
+    color:rgb(255, 255, 255);
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/10/Football-field-desktop-background-wallpapers-1920x1080.jpg");
+    background-position: center;
+}
+
+.img{
+    height: 100px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.text_rep {
+    height: auto;
+    width: 30%;
+    padding: 15px;
+    border-radius: 19px;
+    background-color: rgba(128, 128, 128, 0.9);
+}
+
+.reprezentant{
+    margin-top: 50px;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.video-container {
+	position: relative;
+	margin: 100px 0;
+
+	height: 800px;
+    width: 80vw;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.reprezentant img {
+	max-width: 300px;
+	height: auto;
+	margin-right: 20px;
+}
+
+details{
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    label{
+        display: none;
+    }
+    details{
+        display:block;
+    }
+    :root {
+        --primColor: #dcdcdc;
+        --secoColor: #555555;
+        --cornerRad: 4px;
+      }
+      details {
+        margin: 40px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      summary {
+        writing-mode: vertical-lr;
+        text-align: center;
+        width: auto;
+        height: 9vh;
+        font-size: 9vh;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+        outline: none;
+        transition: transform 200ms ease-in-out 0s;
+      }
+      summary::before,
+      summary::after {
+        position: static;
+        top: 0;
+        left: 0;
+      }
+      summary::before {
+        content: "";
+      }
+      summary::after {
+        content: "III";
+        letter-spacing: -1px;
+      }
+      summary:hover {
+        transform: scale(1.1);
+      }
+      summary::marker {
+        font-size: 0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      details[open] .menu {
+        animation-name: menuAnim;
+      }
+      details[open] summary::before {
+        content: "X";
+      }
+      details[open] summary::after {
+        content: "";
+      }
+      .menu {
+        height: 0;
+        width: fit-content;
+        border-radius: var(--cornerRad);
+        background-color: var(--primColor);
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+        padding-bottom: 1vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        animation: closeMenu 300ms ease-in-out forwards;
+      }
+      .menu a {
+        padding: 12px 24px;
+        margin: 0 16px;
+        color: white;
+        font-size: 60px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        text-align: center;
+        transition: filter 200ms linear 0s;
+      }
+      .menu a:nth-of-type(1) {
+        padding-top: 24px;
+      }
+      .menu a:nth-last-of-type(1) {
+        border-bottom: none;
+      }
+      .menu a:hover {
+        filter: brightness(200%);
+      }
+      details::before {
+        color: white;
+        position: absolute;
+        margin-left: 80px;
+        padding: 10px 10px;
+        opacity: 0.4;
+      }
+      details[open]::before {
+        animation: fadeMe 300ms linear forwards;
+      }
+      @keyframes menuAnim {
+        0% {
+          height: 0;
+        }
+        100% {
+          height: 312px;
+        }
+      }
+      @keyframes fadeMe {
+        0% {
+          opacity: 0.4;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      
+
+    .video-container{
+        height: 300px;
+    }
+    h1{
+        color: white;
+        font-size: 80px;
+        margin-bottom: 30px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .p_top{
+        width: 400px;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(170, 9, 52);
+        z-index: 3;
+    }
+    
+    .top_menu{
+        display: none;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .top_menu a{
+        position: absolute;
+        margin: 0;
+        font-size: 25px;
+    }
+    
+    .top_menu img{
+        margin: 0;
+        height: 9vh;
+        filter: invert(1);
+    }
+}
