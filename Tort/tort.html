@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(65, 65, 65);
+        }
+        .cake{
+            height: 800px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .picture{
+            position: absolute;
+            height: 1000px;
+            width: 920px;
+            background: url("Untitled-1.png") no-repeat center;
+            display: flex;
+            flex-direction: column;
+        }
+        .cadle{
+            position: relative;
+            height: 130px;
+            width: 50px;
+            background: url("cadle.png") no-repeat center;
+
+            transition: 0.3s ease-in-out;
+        }
+        .cadle:hover{
+            
+            -webkit-filter: drop-shadow(0 0 30px rgb(255, 241, 52));
+            filter: drop-shadow(0 0 30px rgb(255, 241, 52));;
+        }
+        .top{
+            margin: 7% 50% 0 48%;
+            
+        }
+        .medium_1{
+            margin: 7% 0% 0 30%;
+        }
+        .medium_2{
+            margin: 7% 0% 0 28%;
+        }
+        .bottom_1{
+            margin: 10% 0% 2% 20%;
+        }
+        .bottom_2{
+            margin: 13% 0% 0 22%;
+        }
+        .bottom_3{
+            margin: 10% 0% 2% 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="cake">
+        <div class="picture">
+            <img class="cadle top" src="cadle.png">
+            <div class="medium">
+                <img class="cadle medium_1" src="cadle.png">
+                <img class="cadle medium_2" src="cadle.png">
+            </div>
+            <div class="bottom">
+                <img class="cadle bottom_1" src="cadle.png">
+                <img class="cadle bottom_2" src="cadle.png">
+                <img class="cadle bottom_3" src="cadle.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
